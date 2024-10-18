@@ -1,0 +1,326 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Elements in individual sample page */
+  
+  aside {
+    display: block;
+    position: fixed;
+    margin-top: 52px;
+    padding: 16px 16px 0 8px;
+    line-height: 25px;
+    width: 300px;
+    height: calc(100% - 76px);
+    font-size: 0.9em;
+    overflow-y: auto;
+  }
+  
+  aside h1 {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+  }
+  
+  aside h2 {
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+  }
+  
+  aside hr {
+    margin-top: 1em;
+  }
+  
+  aside input[type=radio],
+  aside input[type=checkbox] {
+    margin-left: 20px;
+  }
+  
+  aside .file-formats {
+    display: flex;
+  }
+  
+  aside .file-formats ul {
+    flex-grow: 1;
+  }
+  
+  #viewer {
+    display: inline-block;
+    width: calc(100% - 330px);
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    margin-left: 330px;
+    -webkit-box-shadow: 1px 1px 10px #999;
+            box-shadow: 1px 1px 10px #999;
+  }
+  
+  /* Header element in all pages */
+  
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  header .container {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  header .container > div:first-child {
+    float: left;
+  }
+  
+  header .container > div:first-child > a {
+    display: inline-block;
+    width: 242px;
+    height: 44px;
+  }
+  
+  header .container > div:last-child {
+    float: right;
+    height: 44px;
+  }
+  
+  header .title {
+    color: white;
+    font-size: 1.7em;
+    line-height: 44px;
+    margin-left: 8px;
+    float: right;
+  }
+  
+  header .title.sample {
+    font-size: 1.2em;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 52px);
+  }
+  
+  header .button {
+    display: inline-block;
+    padding: 12px 17px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  header .button.filled {
+    background: white;
+    color: #00a5e4;
+  }
+  
+  header .logo {
+    display: block;
+    width: 160px;
+    height: 253%;
+    margin-right: 180px;
+    background-image: url(../css/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header .menu {
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    float: right;
+  }
+  
+  header .menu div {
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    margin: 7px 4px;
+  }
+  
+  /* Section element in navigation pages */
+  
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 10px;
+  }
+  
+  section h1 {
+    margin-bottom: 1.3em;
+  }
+  
+  section h4 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  section .sidebar {
+    position: fixed;
+    width: 250px;
+  }
+  
+  section .sidebar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  section .sidebar a.active,
+  section .sidebar a:hover {
+    color: #00a5e4;
+  }
+  
+  section .sidebar b {
+    line-height: 2em;
+    color: #00a5e4;
+  }
+  
+  section .content {
+    display: inline-block;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    line-height: 1.5em;
+  }
+  
+  section .content h2 {
+    margin-top: 2em;
+  }
+  
+  section .content p {
+    margin: 0;
+  }
+  
+  section .content a {
+    text-decoration: none;
+    color: #00a5e4;
+  }
+  
+  section .inline {
+    margin-top: 10px;
+  }
+  
+  section .inline a {
+    margin-right: 20px;
+  }
+  
+  .cardWrapper {
+    margin-top: 60px;
+    width: 100%;
+  }
+  .cardWrapper .card {
+    border: solid 1px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+  }
+  
+  /* Buttons */
+  .Button {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background-color: #00a5e4;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color .15s ease;
+    transition: background-color .15s ease;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  /* Input fields */
+  input[type=text] {
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px!important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  select {
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px!important;
+    border: 1px solid #e0e0e0;
+  }
+  
+  div img {
+    max-width: 100%;
+    height: 40px;
+    padding: 5px;
+  }
+  
+  div img:hover {
+    cursor: pointer;
+  }
+  
+  /* Smaller screens */
+  
+  @media (max-width: 800px) {
+    header .menu {
+      display: block;
+    }
+  
+    aside {
+      display: none;
+      position: fixed;
+      left: 0;
+      background: white;
+      box-shadow: 50px 0 50px rgba(0, 0, 0, 0.2);
+    }
+  
+    #viewer {
+      width: 100vw;
+      margin-left: 0;
+    }
+  }
