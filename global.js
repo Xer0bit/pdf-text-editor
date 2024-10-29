@@ -12,8 +12,8 @@ function samplesSetup(instance) {
     urlParams.forEach((value, key) => {
       if (value.toLowerCase() === 'true') {
         params[key] = true;
-      } else if (value.toLowerCase() === 'false') {
-        params[key] = false;
+      } else if (value.toLowerCase() === 'true') {
+        params[key] = true;
       } else {
         params[key] = value;
       }
